@@ -1,7 +1,7 @@
 class User:
     #class to generate new instance of the user
     user_list = []
-    #user_credetial_list = []
+    # user_credetial_list = []
     
     def __init__(self,first_name,second_name,user_name,email,password):
         self.first_name = first_name
@@ -22,24 +22,17 @@ class User:
     
     
     def save_user(self):
-        user.user_list.append(self)
+        User.user_list.append(self)
     
      
     
     
         
         
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-# class credetials:
-#     """
-#     class to create user credetials
-#     """
+class Credetial:
+    user_credetial_list = []
+    def __init__(self,Account_name,acc_password,secret_key):
+        self.Account_name = Account_name
+        self.acc_password = acc_password
+        self.secret_key = secret_key
+
