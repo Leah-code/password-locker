@@ -4,15 +4,15 @@ class User:
     #user_credetial_list = []
     
     @classmethod
-    def confirm_users(cls,locker_user,password):
+    def confirm_users(cls,first_name,password):
         
         old_user = ""
         for user in user.user_list:
            if user.locker_user and user.password == password:
            old_user = user.locker_user
         return old_user
-    def _init_(self,Account_name,email,password):
-        self.Account_name = Account_name
+    def _init_(self,Account_name,user_name,email,password):
+        self.user_name = first_name
         self.email = email
         self.password = password
     
