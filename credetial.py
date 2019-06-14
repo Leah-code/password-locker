@@ -31,8 +31,15 @@ class User:
         
 class Credetial:
     user_credetial_list = []
-    def __init__(self,Account_name,acc_password,secret_key):
+    def __init__(self,Account_name,login_name,acc_password,secret_key):
+        #docstring for simplicity.....
         self.Account_name = Account_name
+        self.login_name = login_name
         self.acc_password = acc_password
         self.secret_key = secret_key
+    
+    
+    def save_credetial(self):
+        Credetial.user_credetial_list.append()
+        
 
