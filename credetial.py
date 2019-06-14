@@ -3,7 +3,7 @@ class user:
     user_list = []
     user_credetial_list = []
     
-    def _init_(self,first_name,second_name,password):
+    def _init_(self,name,password):
         
     
     
