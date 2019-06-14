@@ -17,8 +17,13 @@ class User:
                if user.locker_user and user.password == password:
                  old_user = user.locker_user
         return old_user
-    def save(user_list):
+    
         pass
+    
+    
+    def save_user(self):
+        user.user_list.append(self)
+    
      
     
     
