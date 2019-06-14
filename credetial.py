@@ -1,9 +1,16 @@
-class user:
+class User:
     #class to generate new instance of the user
     user_list = []
-    user_credetial_list = []
+    #user_credetial_list = []
     
-    def _init_(self,name,password):
+    
+    #DEFINING PROPERTIES FOR OUR OBJECT.....
+    def _init_(self,first_name,password):
+        self.first_name = first_name
+        self.password = password
+    
+        
+        
         
     
     
@@ -14,7 +21,7 @@ class user:
     
     
     
-class credetials:
-    """
-    class to create user credetials
-    """
+# class credetials:
+#     """
+#     class to create user credetials
+#     """
