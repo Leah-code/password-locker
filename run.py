@@ -29,3 +29,8 @@ def check_existing_user_create_user_credetials(secret_key):
     return Credetial.user_credetials_exist(secret_key)
 def display_secret_key():
     return Credetial.display_user_credetials
+def display_user_account():
+    return Credetial.display.user_credetials()
+
+# def main()
+
