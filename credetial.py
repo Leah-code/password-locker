@@ -39,7 +39,7 @@ class Credetial:
         self.secret_key = secret_key
     
     
-    def save_credetial(self):
+    def save_credetials(self):
         Credetial.user_credetials_list.append()
         
     def delete_credetials(self):
