@@ -45,4 +45,8 @@ class Credetial:
     def delete_credetials(self):
         Credetial.user_credetial_list.remove(self)
         
-
+        
+@classmethod
+def find_by_secret_key(cls,secret_key):
+    for credetials in cls.seccret_key  == secret_key:
+        return credetials

@@ -41,7 +41,7 @@ class TestUser(unittest.TestCase):
             #saving multiple user......
         def test_save_multiple_users_credetials(self):
             self.new_credetials.save_credetials()
-            test_user_credetials = Credetial("instagrgm","mzinge11","mzinge8888","57753838")
+            test_user_credetials = Credetial("instagrgm","mzinge11","mzinge8888","5775")
             test_user_credetials.save_credetial()
             self.asserEqual(len(Credetial.user_credetial_list),2)
         def test_delete_credetials(self):
@@ -50,7 +50,13 @@ class TestUser(unittest.TestCase):
             test_user_credetials.save_credetial()
             self.new_credetials.delete_credetials()
             self.assertEqual(len(Credetial.user_credetial_list),2)
-            
+        def test_find_credetials_by_secret_key(self):
+            self.new_credetials.save_user_credetials()
+            test.ueser_credetials = Credetial("whatsapp","python88","muzinge210","76jj98")
+            test_user_credetials.save_user_credetials()
+            found_user_credetials = Credetial.find("76jj98")
+            self.assertEqual(found_user_credetials.acc_password,test_user_credetials.acc_password)
             
 if __name__ == '__main__':
     unittest.main()
+ 
