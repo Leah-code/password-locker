@@ -30,7 +30,7 @@ class User:
         
         
 class Credetial:
-    user_credetial_list = []
+    user_credetials_list = []
     def __init__(self,Account_name,login_name,acc_password,secret_key):
         #docstring for simplicity.....
         self.Account_name = Account_name
@@ -40,13 +40,19 @@ class Credetial:
     
     
     def save_credetial(self):
-        Credetial.user_credetial_list.append()
+        Credetial.user_credetials_list.append()
         
     def delete_credetials(self):
-        Credetial.user_credetial_list.remove(self)
+        Credetial.user_credetials_list.remove(self)
         
         
 @classmethod
 def find_by_secret_key(cls,secret_key):
     for credetials in cls.seccret_key  == secret_key:
         return credetials
+
+@classmethod
+def user_credetials_exists(cls,Account_name):
+        if user_credetials in cls.user_credetials_list:
+            if user_credetials.Account_name == Account_name:
+                return True
