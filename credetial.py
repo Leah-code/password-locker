@@ -42,4 +42,7 @@ class Credetial:
     def save_credetial(self):
         Credetial.user_credetial_list.append()
         
+    def delete_credetials(self):
+        Credetial.user_credetial_list.remove(self)
+        
 

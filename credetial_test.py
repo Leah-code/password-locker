@@ -26,7 +26,7 @@ class TestUser(unittest.TestCase):
         
         
     class TestCredetial(unittest.TestCase):
-        # self,Account_name,acc_password,secret_key
+        # self,Account_name,login_name,acc_password,secret_key
         def setUp(self):
             self.new_credetials = Credetial("facebook","kadweka","mzinge300","12345")
         def test__init__(self):
@@ -44,7 +44,12 @@ class TestUser(unittest.TestCase):
             test_user_credetials = Credetial("instagrgm","mzinge11","mzinge8888","57753838")
             test_user_credetials.save_credetial()
             self.asserEqual(len(Credetial.user_credetial_list),2)
-
+        def test_delete_credetials(self):
+            self.new_credetials.save_user_credetials()
+            test_user_credetials = Credetial("snapchat","hussein95","hakakaka","679277")
+            test_user_credetials.save_credetial()
+            self.new_credetials.delete_credetials()
+            self.assertEqual(len(Credetial.user_credetial_list),2)
             
             
 if __name__ == '__main__':
