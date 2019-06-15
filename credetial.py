@@ -53,9 +53,12 @@ def find_by_secret_key(cls,secret_key):
 
 @classmethod
 def user_credetials_exists(cls,Account_name):
-        if user_credetials in cls.user_credetials_list:
+        for user_credetials in cls.user_credetials_list:
             if user_credetials.Account_name == Account_name:
                 return True
+            
+            else:
+                return False
 
 @classmethod
 def display_user_credetials(cls):

@@ -1,3 +1,4 @@
+import pyperclip
 import unittest
 from credetial import User,Credetial
 # self,first_name,second_name,user_name,email,password)
@@ -39,6 +40,11 @@ class TestUser(unittest.TestCase):
             self.new_credetials.save_credetials()
             self.assertEqual(len(Credetial.user_credetial_list),1)
             #saving multiple user......
+            
+        def tearDown(self):
+            Credential.credential_list = []
+            
+            
         def test_save_multiple_users_credetials(self):
             self.new_credetials.save_credetials()
             test_user_credetials = Credetial("instagrgm","mzinge11","mzinge8888","5775")
@@ -62,7 +68,8 @@ class TestUser(unittest.TestCase):
             test_user_credetials.save_user_credetials_exists("87454")
             self.assertTrue(user_credetials_exists) 
         def test_disply_all_user_credetials(self):
-            self.assertEqual(Credetial.display_user_credetials(),Credetial.user_credetials_list)                  
+            self.assertEqual(Credetial.display_user_credetials(),Credetial.user_credetials_list)      
+                        
 if __name__ == '__main__':
     unittest.main()
  
