@@ -1,6 +1,8 @@
 #!/usr/bin/env python3.6
 
 from  credetial import User,Credetial
+import random
+import getpass
 
 
 
@@ -32,5 +34,32 @@ def display_secret_key():
 def display_user_account():
     return Credetial.display.user_credetials()
 
-# def main()
+def main():
+    print("Welcome to passwordlocker.WHATS YOUR NAME?")
+    user_name = input().upper()
+    print(f"HELLO {user_name}.DO YOU WANT TO SAVE YOUR PASSWORDS")
+    print("/N")
+    while True:
+        print("use this short code: save - saving a new contact, see - display your saved passwords, dele - to delete your saved passwords, look -  to find a password, quit -exit the option")
+        short_code = input().lower()
+            # Account_name,login_name,acc_password,secret_key
+        if short_code == 'save':
+                print("Account_name")
+                Account_name = input()
+                
+                print("login_name")
+                login_name = input()
+                
+                print ("acc_password")
+                account_password = input()
+                
+                print("secret_key")
+                secret_key = input()    
+    
+    
+if __name__ == '__main__':
+   
+    
+    
+    main()
 
