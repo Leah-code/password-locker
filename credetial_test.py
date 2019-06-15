@@ -28,12 +28,24 @@ class TestUser(unittest.TestCase):
     class TestCredetial(unittest.TestCase):
         # self,Account_name,acc_password,secret_key
         def setUp(self):
-            self.new_credetial = Credetial("facebook","kadweka","mzinge300","12345")
+            self.new_credetials = Credetial("facebook","kadweka","mzinge300","12345")
         def test__init__(self):
             self.assertEqual(self.new_credetial.Account_name,"facebook")
             self.assertEqual(self.new_credetial.login_name,"kadweka")
             self.assertEqual(self.new_credetial.acc_password,"mzinge300")
             self.assertEqual(self.new_credetial.secret_key,"12345")
-        
+            #saving user credetials....
+        def test_save_credetials():
+            self.new_credetials.save_credetials()
+            self.assertEqual(len(Credetial.user_credetial_list),1)
+            #saving multiple user......
+        def test_save_multiple_users_credetials(self):
+            self.new_credetials.save_credetials()
+            test_user_credetials = Credetial("instagrgm","mzinge11","mzinge8888","57753838")
+            test_user_credetials.save_credetial()
+            self.asserEqual(len(Credetial.user_credetial_list),2)
+
+            
+            
 if __name__ == '__main__':
     unittest.main()
