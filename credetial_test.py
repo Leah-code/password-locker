@@ -60,7 +60,9 @@ class TestUser(unittest.TestCase):
             self.new_user_credetials.save_user_credetials()
             test_user_credetials = Credetial("twitter","kadweka77","hussein8149","87454")
             test_user_credetials.save_user_credetials_exists("87454")
-            self.assertTrue(user_credetials_exists)                   
+            self.assertTrue(user_credetials_exists) 
+        def test_disply_all_user_credetials(self):
+            self.assertEqual(Credetial.display_user_credetials(),Credetial.user_credetials_list)                  
 if __name__ == '__main__':
     unittest.main()
  

@@ -56,3 +56,7 @@ def user_credetials_exists(cls,Account_name):
         if user_credetials in cls.user_credetials_list:
             if user_credetials.Account_name == Account_name:
                 return True
+
+@classmethod
+def display_user_credetials(cls):
+    return cls.user_credetials_list
