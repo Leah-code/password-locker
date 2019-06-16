@@ -36,7 +36,7 @@ class Credetial:
         
         self.Accountname = Accountname
         self.loginname = loginname
-        self.accountpassword = accountpassword
+        self.accountpassword = accountpasssword
     
     
     def save_user_credetials(self):
