@@ -6,6 +6,19 @@
         <list>
           <option value="W29" />
           <option value="E501" />
+          <option value="W29" />
+          <option value="E501" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="credetial_test.*" />
+          <option value="run.save_credetial" />
+          <option value="run.save_user_credetials" />
+          <option value="run.user_credetials" />
+          <option value="run.acc_password" />
         </list>
       </option>
     </inspection_tool>

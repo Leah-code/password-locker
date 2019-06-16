@@ -1,7 +1,9 @@
+import pyperclip
+
 class User:
     #class to generate new instance of the user
     user_list = []
-    # user_credetial_list = []
+    credetial_list = []
     
     def __init__(self,first_name,second_name,user_name,email,password):
         self.first_name = first_name
@@ -30,36 +32,35 @@ class User:
         
         
 class Credetial:
-    user_credetials_list = []
-    def __init__(self,Account_name,login_name,acc_password,secret_key):
+    credetials_list = []
+    def __init__(self,Accountname,loginname,mypassword,secretkey):
         #docstring for simplicity.....
-        self.Account_name = Account_name
-        self.login_name = login_name
-        self.acc_password = acc_password
-        self.secret_key = secret_key
+        self.Accountname = Accountname
+        self.loginname = loginname
+        self.mypassword = mypassword
+        self.secretkey = secretkey
     
     
-    def save_credetials(self):
-        Credetial.user_credetials_list.append()
+    def save_user_credetials(self):
+        Credetial.credetials_list.append(self)
         
-    def delete_credetials(self):
-        Credetial.user_credetials_list.remove(self)
+    def delete_user_credetials(self):
+        Credetial.credetials_list.remove(self)
         
         
 @classmethod
-def find_by_secret_key(cls,secret_key):
-    for credetials in cls.seccret_key  == secret_key:
+def find_by_secretkey(cls,secretkey):
+    for credetials in cls.secretkey  == secretkey:
         return credetials
 
 @classmethod
-def user_credetials_exists(cls,Account_name):
-        for user_credetials in cls.user_credetials_list:
-            if user_credetials.Account_name == Account_name:
+def user_credetials_exists(cls,Accountname):
+        for account in cls.credetials_list:
+            if account.secretkey == secretkey:
                 return True
-            
             else:
                 return False
 
 @classmethod
 def display_user_credetials(cls):
-    return cls.user_credetials_list
+    return cls.credetials_list
