@@ -1,9 +1,9 @@
 import pyperclip
-
 class User:
+    
     #class to generate new instance of the users
     user_list = []
-    Owner_credetial_list = []
+    credetials_list = []
     
     @classmethod
     def confirm_users(cls,email,password):
