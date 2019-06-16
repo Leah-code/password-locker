@@ -29,7 +29,7 @@
 ### __How the application works__
 1. First of all the user has to be able to run the application using \*_python3.6 run.py_\* but if the user has run the following command \*chmod +x functionality.py\* on the terminal he can run the application by typing *./run.py*
 
-### __Commands to guid you
+### __Commands to guid you__
 
   > **_save:_** This command will enable you to save the account name and password of that account
   > **_look:_** search for your account credential
@@ -44,10 +44,10 @@
 ![account to store date](/) -->
 
 
-### __Contributors
+### __Contributors__
  + Hussein katana
  
- ### __MTI license
+ ### __MTI license__
  + https://github.com/hussein18149/password-locker/blob/master/LICENSE
 
 
