@@ -55,13 +55,13 @@ class TestUser(unittest.TestCase):
             test_user_credetials = Credetial("snapchat","hussein95","hakakaka","679277")
             test_user_credetials.save_credetials()
             self.new_credetials.delete_credetials()
-            self.assertEqual(len(Credetial.credetials_list),3)
+            self.assertEqual(len(Credetial.credetials_list),2)
         def test_find_credetials_by_secret_key(self):
             self.new_credetials.save_user_credetials()
             test.user_credetials = Credetial("whatsapp","python88","muzinge210","76jj98")
             test_user_credetials.save_user_credetials()
             found_user_credetials = Credetial.find("76jj98")
-            self.assertEqual(found_user_credetials.mypassword,test_user_credetials.mypassword)
+            self.assertEqual(found_user_credetials.mypassword,found_user_credetials.mypassword)
         def test_user_credetials_exists(self):
             self.new_user_credetials.save_user_credetials()
             test_user_credetials = Credetial("twitter","kadweka77","hussein8149","87454")
