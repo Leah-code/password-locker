@@ -20,9 +20,9 @@
     * pyperclip *how to install pyperclip:* __python3.6 -m pip install pyperclip__
     * runs on  ubuntu 16.04
 2. Syntax
-    * import getpass
-    * import pyperclip
-    * import random
+    * import getpass --- module provides a secure way to handle the password prompts where programs interact with the users via the terminal
+    * import pyperclip --- module that enables managing our system clipboard. It is a cross-platform module
+    * import random --- This function is also used to generate random number but within a range specified in its arguments
 
 ***
 
