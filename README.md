@@ -39,9 +39,9 @@
 
 ***
 
-## Here some images to elaborate how the application works
+<!-- ## Here some images to elaborate how the application works
 ![user sign up and login](/)
-![account to store date](/)
+![account to store date](/) -->
 
 
 ###__ Contributors
