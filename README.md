@@ -42,9 +42,12 @@
 
 ***
 
-<!-- ## Here some images to elaborate how the application works
-![user sign up and login](/)
-![account to store date](/) -->
+< ## Here some images to elaborate how the application works
+![account to store date](/IMAGES/Screenshot from 2019-06-17 13-52-52.png)
+![user sign up and login](/IMAGES/Screenshot from 2019-06-17 13-53-04.png)
+![user sign up and login](/IMAGES/Screenshot from 2019-06-17 13-53-21.png)
+![user sign up and login](/IMAGES/Screenshot from 2019-06-17 13-53-32.png)
+
 
 
 ### __Contributors__
