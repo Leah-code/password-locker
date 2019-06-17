@@ -42,11 +42,9 @@
 
 ***
 
-< ## Here some images to elaborate how the application works
-![account to store date](/IMAGES/Screenshot from 2019-06-17 13-52-52.png)
-![user sign up and login](/IMAGES/Screenshot from 2019-06-17 13-53-04.png)
-![user sign up and login](/IMAGES/Screenshot from 2019-06-17 13-53-21.png)
-![user sign up and login](/IMAGES/Screenshot from 2019-06-17 13-53-32.png)
+## How to use my project
+<a href="../assets/kazam_vfo011aj.movie" target="_blank"><img src="./IMAGES/Screenshot from 2019-06-17 13-52-52.png"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 
