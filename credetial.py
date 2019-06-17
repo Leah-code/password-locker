@@ -1,4 +1,6 @@
 import pyperclip
+
+
 class User:
     
     #class to generate new instance of the users
@@ -9,7 +11,7 @@ class User:
     def confirm_users(cls,email,password):
         old_user = ""
         for user in User.user_list:
-               if user.email==email and  user.password == password:
+               if user.email== email and  user.password == password:
                  old_user = user.email
         return old_user
     
@@ -29,7 +31,9 @@ class User:
         
         
 class Credetial:
+    
     credetials_list = []
+    
     def __init__(self,Accountname,loginname,accountpasssword):
         
         #docstring for simplicity.....
@@ -39,26 +43,30 @@ class Credetial:
         self.accountpassword = accountpasssword
     
     
-    def save_user_credetials(self):
+    def save_credetials(self):
         Credetial.credetials_list.append(self)
         
     def delete_credetials(self):
         Credetial.credetials_list.remove(self)
         
-    # def display_credetials(self):
-    #     Credetial.credetials_list.display(self)
-        
+    def delete_credetials(self):
+        Credetial.credetials_list.delete(self) 
+    # def credetials_exists(self):
+    #     Credetial.credetials_list.exists(self)
+    # def find_by_Accountname(self):
+    #     Credetial.credetials_list.found(self) 
+     
         
 @classmethod
 def find_by_Accountname(cls,Accountname):
-    for credetials in cls.credetial_list:
+    for credetials in cls.credetials_list:
         if credetials.Accountname == Accountname:
             return credetials
 
 @classmethod
 def credetials_exists(cls,Accountname):
-        for Accountname in cls.credetials_list:
-            if Accountname.Accountname == "Accountname":
+        for credetials in cls.credetials_list:
+            if Accountname.Accountname == Accountname:
                 return True
             else:
                 return False
