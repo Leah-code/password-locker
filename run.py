@@ -38,8 +38,8 @@ def find_credetials(Accountname):
 def check_credetials(Accountname):
     return Credetial.credetials_exists(Accountname)
 
-def display_Accountname(self):
-    return Credetial.display_credetials(self)
+def display_Accountname():
+    return Credetial.display_credetials()
 
 #def display_credetials():
     #return Credetial.display_credetials()
@@ -65,16 +65,16 @@ def main():
                         save_user(Credetial(Accountname,loginname, accountpasssword))
                         print(f'here are your account details: .{Accountname}..{loginname}...{accountpasssword}')
                 elif short_code == 'see':
-                        if display_Accountname(Accountname):
+                        if display_Accountname():
                             print('_' * 10)
                             for credetials in display_Accountname():
-                                print(f'SEARCH RESULTS\n Accountname: {credetials.Accountname}\n Username: {credetials.loginname}\n  Password: {credetials.accountpasssword}\n ')
+                                print(f'SEARCH RESULTS\n Accountname: {credetials.Accountname}\n Username: {credetials.loginname}\n  Password: {credetials.accountpassword}\n ')
                             print('_' * 10)
                         else:
                             print("No such results..")
                             print("\n")
                 elif short_code == 'look':
-                            search = input("ENTER ACCOUNTNAME:.?")
+                            search = input("ENTER ACCOUNTNAME?")
                             if check_credetials(search):
                                 search_Accountname = find_credetials(search)
                                 print(f'Accountname: {search_Accountname.Accountname}\n Username: {search_Accountname.loginname}\n ..Password: {search_Accountname.accountpassword}\n ')
