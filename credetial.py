@@ -1,6 +1,4 @@
 import pyperclip
-
-
 class User:
 
     #class to generate new instance of the users

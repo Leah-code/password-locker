@@ -10,14 +10,14 @@ def create_user(username,email,password):
     return create_user
 
 def save_user(user):
-    User.save_credetials()
+    User.save_user()
 
 def del_user(user):
     user.delete_user()
 
 def create_credetials(Accountname,loginname,accountpassword,secretkey):
-    new_credetials = Credetial(Accountname,loginname,accountpassword,secretkey)
-    return new_credetials
+    create_credetials = Credetial(Accountname,loginname,accountpassword,secretkey)
+    return create_credetials
 
 def save_credetials(user):
     user.save_credetials()
@@ -48,7 +48,7 @@ def main():
             print(f"HELLO {user_name}.WELCOME TO BEST PASSWORDLOCKER\n select what you would want to do.")
             print("\n")
             while True:
-                print(":\nmake-create a user account\nsave - saving a new contact\nsee - display your saved passwords\nlook -  to find a password\nquit -exit the option")
+                print(":\nmake-create a user account\nsave - saving a new contact\nsee - display your saved passwords\nlook -  to find a password\nquit -exit to exit credetial")
                 short_code = input().lower()
                     # Account_name,login_name,acc_password,secret_==key
                 if short_code == 'make':
@@ -73,21 +73,21 @@ def main():
                         if display_Accountname():
                             print('_' * 10)
                             for credetials in display_Accountname():
-                                print(f'SEARCH RESULTS\n ACCOUNT-NAME:{credetials.Accountname}\nUSER-NAME:{credetials.loginname}\nPASSWORD:{credetials.accountpassword}\n')
+                                print(f'SAVED ACCOUNTS\nACCOUNT-NAME:{credetials.Accountname}\nUSER-NAME:{credetials.loginname}\nPASSWORD:{credetials.accountpassword}\n')
                             print('_' * 10)
-                        else:
-                            print("No such results..")
-                            print("\n")
                 elif short_code == 'look':
                             search = input("ENTER ACCOUNTNAME?")
                             if check_credetials(search):
                                 search_Accountname = find_credetials(search)
                                 print(f'Accountname: {search_Accountname.Accountname}\n Username: {search_Accountname.loginname}\n ..Password: {search_Accountname.accountpassword}\n ')
-                            else:
-                                print('NONE_EXISTING ACCOUNT')
                 elif short_code == 'quit':
                             print("WELCOME BACK AGAIN...(direct feedback@katana.com)")
                             break
+                elif short_code !="quit/look/see/make/save":
+                            print(f"SORRY {user_name} YOU SELECTED THE WRONG CHOICE..")
+                            break
+
+
 
 
 if __name__ == '__main__':

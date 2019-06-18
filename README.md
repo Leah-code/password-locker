@@ -33,7 +33,7 @@
 1. Clone the project to your local repository
 2. Navigate the project on your terminal
 3. \*_python3.6 run.py_\* but if the user has run the following command \*chmod +x functionality.py\* on the terminal he can run the application by typing *./run.py*
-4. **_new:_** This will enable you to create an account for you to use the project 
+4. **_new:_** This will enable you to create an account for you to use the project
 4. **_save:_** This command will enable you to save the account name and password of that account
 5. **_look:_** search for your account credential
       * *note* you will be asked to enter the accountname of your so as to be able to search for your saved account credentials
